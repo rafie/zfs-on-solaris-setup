@@ -1,0 +1,3 @@
++auto_master
+/net            -hosts          -nosuid,vers=3,nobrowse
+/home           auto_home       -nobrowse

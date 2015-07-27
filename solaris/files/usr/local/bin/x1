@@ -1,0 +1,6 @@
+#!/bin/csh -f
+
+foreach f (`sasinfo lu | perl -e 'while (<>) { $_ =~ /OS Device Name: (.*)/; print "$1\n"; }'`)
+	echo smartctl -d scsi -x $f into `basename $f` 
+end
+
